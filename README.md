@@ -31,7 +31,7 @@ Users should be able to:
 
 - Solution URL: https://github.com/gdcristea/maker_pre-launch_landing_page
 
-- Live Site URL: https://gdcristea.github.io/Suite-landing-page/
+- Live Site URL: https://gdcristea.github.io/maker_pre-launch_landing_page/
 
 
 ## Author
