@@ -58,7 +58,7 @@ header {
 // Hero section
 .hero {
     background: {
-        image: url(/assets/illustration-hero-mobile.png);
+        image: url(assets/illustration-hero-mobile.png);
         size: 410px;
         repeat: no-repeat;
     }
@@ -244,7 +244,7 @@ header {
 // Contact section
 .contact {
     background: {
-        image: url(/assets/bg-footer-squiggle.svg);
+        image: url(assets/bg-footer-squiggle.svg);
         size: 584px;
         repeat: no-repeat;
         position: top center;
@@ -351,9 +351,9 @@ input[type="email"]:focus {
         padding: 53px 0;
         background: {
             image:
-                url(/assets/illustration-hero-left.svg), 
-                url(/assets/bg-hero-squiggle.svg), 
-                url(/assets/illustration-hero-right.svg);
+                url(assets/illustration-hero-left.svg), 
+                url(assets/bg-hero-squiggle.svg), 
+                url(assets/illustration-hero-right.svg);
             size: 
                 314px, 
                 386px, 
