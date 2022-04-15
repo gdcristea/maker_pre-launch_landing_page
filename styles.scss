@@ -1,0 +1,587 @@
+@import "generalStyles";
+
+// Colors
+$background: #080C20;
+$errors: #FF2965;
+$grey: #777F98;
+$white: #FFFFFF;
+$dark-blue: #093F68;
+$light-blue: #3EE9E5;
+
+@mixin container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin paragraphs-style {
+    font: {
+        size: 15px;
+        weight: 500;
+    }
+    line-height: 25px;
+}
+
+body {
+    font: {
+        family: 'Manrope', sans-serif;
+        weight: 800;
+    }  
+    background-color: $background;
+    color: $white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: inline-block;
+}
+
+input,
+button {
+    font: {
+        family: inherit;
+        weight: inherit;
+    }
+}
+
+// Header section
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 65.5px;
+}
+
+// Hero section
+.hero {
+    background: {
+        image: url(/assets/illustration-hero-mobile.png);
+        size: 410px;
+        repeat: no-repeat;
+    }
+}
+
+.hero-container {
+    @include container;
+    max-width: 457px;
+    text-align: center;
+    position: relative;
+    top: 280px;
+}
+
+.hero-container {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 0 35px;
+    }
+
+    h1 span {
+        color: $light-blue;
+    }
+
+    p {
+        @include paragraphs-style;
+        color: $grey;
+        margin: 23px 0 32px;
+    }
+}
+
+// Perks section
+.perks {
+    @include container;
+    text-align: center;
+    margin-top: 430px; 
+    max-width: 573px;
+}
+
+.perks h3 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 32px;
+    margin-bottom: 11px;
+}
+
+.perks p {
+    @include paragraphs-style;
+    color: $grey;
+    margin-bottom: 56px;
+}
+
+.passions-container,
+.freedom-container,
+.lifestyle-container,
+.work-anywhere-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-blue;
+    width: 120px;
+    border-radius: 45px;
+    margin: 0 auto;
+}
+
+.passions-container {
+    padding: 22px 24px 22px 30px; 
+}
+
+.freedom-container {
+    padding: 28px 32px;
+}
+
+.lifestyle-container {
+    padding: 27px 30px; 
+}
+
+.work-anywhere-container {
+    padding: 34px 21px;
+}
+
+// Pricing section
+.pricing {
+    @include container;
+    margin-top: 144px;
+    margin-bottom: 144px;
+    text-align: center; 
+}
+
+.pricing h2 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 27px;
+}
+
+.pricing > p {
+    @include paragraphs-style;
+    color: $grey;
+    max-width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 79px;
+}
+
+.pricing_free-plan,
+.pricing_paid-plan {
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 30px 30px 32px;
+    border-radius: 8px;
+}
+
+.pricing_free-plan {
+    background-color: $dark-blue;
+    margin-bottom: 65px;
+}
+
+.pricing_paid-plan {
+    background-color: $light-blue;
+    color: $background;
+}
+
+.pricing_free-plan-icon {
+    margin-top: -53px;
+    vertical-align: top; //in order for margin-top: -53px to work
+}
+
+.pricing_paid-plan-icon {
+    margin-top: -63px;
+    vertical-align: top;
+}
+
+.pricing_free-plan h3,
+.pricing_paid-plan h3 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 19px;
+    }
+
+.pricing_free-plan h3:last-of-type,
+.pricing_paid-plan h3:last-of-type  {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+.pricing_paid-plan h3:last-of-type {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing_paid-plan h3:last-of-type span {
+    @include paragraphs-style;
+    opacity: .6;
+    margin-left: 7.5px;
+}
+
+.pricing_free-plan p,
+.pricing_paid-plan p {
+        @include paragraphs-style;
+        opacity: .6;
+        margin-bottom: 26px;
+    }
+
+.pricing_free-plan li,
+.pricing_paid-plan li {
+    @include paragraphs-style;
+    margin-bottom: 12px;
+} 
+
+.pricing_free-plan li:last-of-type,
+.pricing_paid-plan li:last-of-type {
+    margin-bottom: 0;
+}
+
+.pricing_free-plan li svg,
+.pricing_paid-plan li svg {
+    margin-right: 15px;
+}
+
+// Contact section
+.contact {
+    background: {
+        image: url(/assets/bg-footer-squiggle.svg);
+        size: 584px;
+        repeat: no-repeat;
+        position: top center;
+    }
+    margin-bottom: 164px;
+}
+
+.contact-container {
+    @include container;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 31px;
+    padding: 0 20px;
+}
+
+input[type="email"],
+button {
+    display: inline-block;
+    width: 100%;
+    max-width: 375px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 24px;
+}
+
+input[type="email"] {
+    font-size: 15px;
+    color: inherit;
+    background-color: $dark-blue;
+    padding: 12px 18px;
+    border: 2px solid $background;
+    outline: none;
+}
+
+::placeholder {
+    @include paragraphs-style;
+    font-weight: 800;
+    color: inherit;
+    opacity: .4;
+}
+
+button {
+    @include paragraphs-style;
+    font-weight: 800;
+    color: $dark-blue;
+    background-color: $light-blue;
+    padding: 12px 42px;
+    border: 2px solid $light-blue;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+//Hoover & Focus
+button:hover,
+button:focus {
+    color: $white;
+    background-color: $background;
+    border: 2px solid $light-blue;
+}
+
+input[type="email"]:hover,
+input[type="email"]:focus {
+    border-color: $light-blue;
+}
+
+//JavaScript
+.email-not-valid {
+    font: {
+        size: 12px;
+        weight: 500;
+    }
+    line-height: 25px;
+    color: $errors;
+    display: none;
+}
+
+.email-border-error {
+    border: 2px solid $errors !important;
+}
+
+// Tablet 768px
+@media (min-width: 415px) {
+    .hero {
+        background: {
+            position: top center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+//    Header section
+    header {
+        @include container;
+        justify-content: flex-start;
+        padding: 48px 0 77px;
+    }
+
+// Hero section
+    .hero {
+        padding: 53px 0;
+        background: {
+            image:
+                url(/assets/illustration-hero-left.svg), 
+                url(/assets/bg-hero-squiggle.svg), 
+                url(/assets/illustration-hero-right.svg);
+            size: 
+                314px, 
+                386px, 
+                317px;
+            repeat:
+                no-repeat, 
+                no-repeat, 
+                no-repeat;
+            position:
+                left, 
+                center, 
+                right;
+        }
+    }
+
+    .hero-container {
+        top: 0;
+    }
+
+// Perks section
+    .perks {
+        margin-top: 109px;
+    }
+
+    .perks > div {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .perks > div:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .perks-text {
+        max-width: 340px;
+    }
+
+    .perks p {
+        margin-bottom: 0;
+    }
+
+    .perks h3 {
+        margin-top: 0;
+    }
+
+    .passions-container,
+    .freedom-container,
+    .lifestyle-container,
+    .work-anywhere-container {
+        margin: 0;
+        margin-right: 55px;
+    }
+
+    .passions-container,
+    .lifestyle-container {
+        margin-left: 55px;
+    }
+
+// Pricing section
+    .pricing {
+        margin-bottom: 119px;
+    }
+
+    .pricing_free-plan,
+    .pricing_paid-plan {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .pricing_free-plan {
+        padding-bottom: 48px;
+    }
+
+    .pricing_paid-plan {
+        padding-bottom: 62px;
+    }
+
+//Contact section
+    .contact {
+        background-size: 1022px;
+        padding-bottom: 50px;
+        margin-bottom: 69px;
+    }
+
+    .contact-container h2 {
+        padding: 0;
+    }
+
+    .contact-email {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .contact-email > div {
+        width: 320px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+
+    .email-not-valid {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    button {
+        padding-left: 18px;
+        padding-right: 18px;
+        max-width: 140px;
+        margin-left: 16px;
+        margin-top: 0;
+    }
+}
+
+// Desktop 1440px
+@media (min-width: 1440px) {
+//Header section
+    header {
+        padding: 89px 0 124px;
+    }
+
+// Hero section
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-container {
+        max-width: 620px;
+    }
+
+    .hero-container h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .hero-container p {
+       margin: 24px 0 64px;
+    }
+
+//Perks section
+    .perks {
+        display: flex;
+        justify-content: center;
+        max-width: none;
+        margin-top: 202px;
+    }    
+
+    .perks > div {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .perks > div:last-of-type {
+        margin-right: 0;
+    }
+
+    .passions-container,
+    .freedom-container,
+    .lifestyle-container,
+    .work-anywhere-container {
+        margin: 0;
+    }
+
+    .freedom-container,
+    .work-anywhere-container {
+        margin-top: 48px;
+    }
+
+    .perks h3 {
+        margin: 48px 0 23px;
+    }
+
+    .perks-text {
+        max-width: 255px;
+    }
+
+// Pricing section
+   .pricing {
+        margin-top: 202px;
+        margin-bottom: 151px;
+   }
+
+    .pricing h2 {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+
+    .pricing > p {
+        margin-bottom: 117px;
+    }
+
+    .pricing > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricing_free-plan,
+    .pricing_paid-plan {
+        margin: 0;
+    }
+
+    .pricing_free-plan {
+        margin-right: 30px;
+    }
+
+    .pricing_free-plan p,
+    .pricing_paid-plan p {
+        margin-bottom: 24px;
+    }
+
+//Contact section
+    .contact {
+        background-size: 1664px 228px;
+        padding: 52px 0 70px;
+        margin-bottom: 37px;
+    }
+
+    .contact-container h2 {
+       font-size: 32px;
+       line-height: 44px;
+       margin-bottom: 42px;
+    }
+}

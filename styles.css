@@ -1,0 +1,580 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  background-color: #080C20;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0 65.5px;
+}
+
+.hero {
+  background-image: url(/assets/illustration-hero-mobile.png);
+  background-size: 410px;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 457px;
+  text-align: center;
+  position: relative;
+  top: 280px;
+}
+
+.hero-container h1 {
+  font-size: 32px;
+  line-height: 40px;
+  padding: 0 35px;
+}
+
+.hero-container h1 span {
+  color: #3EE9E5;
+}
+
+.hero-container p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #777F98;
+  margin: 23px 0 32px;
+}
+
+.perks {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 430px;
+  max-width: 573px;
+}
+
+.perks h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 32px;
+  margin-bottom: 11px;
+}
+
+.perks p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #777F98;
+  margin-bottom: 56px;
+}
+
+.passions-container,
+.freedom-container,
+.lifestyle-container,
+.work-anywhere-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #093F68;
+  width: 120px;
+  border-radius: 45px;
+  margin: 0 auto;
+}
+
+.passions-container {
+  padding: 22px 24px 22px 30px;
+}
+
+.freedom-container {
+  padding: 28px 32px;
+}
+
+.lifestyle-container {
+  padding: 27px 30px;
+}
+
+.work-anywhere-container {
+  padding: 34px 21px;
+}
+
+.pricing {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 144px;
+  margin-bottom: 144px;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 27px;
+}
+
+.pricing > p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #777F98;
+  max-width: 573px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 79px;
+}
+
+.pricing_free-plan,
+.pricing_paid-plan {
+  max-width: 445px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 30px 30px 32px;
+  border-radius: 8px;
+}
+
+.pricing_free-plan {
+  background-color: #093F68;
+  margin-bottom: 65px;
+}
+
+.pricing_paid-plan {
+  background-color: #3EE9E5;
+  color: #080C20;
+}
+
+.pricing_free-plan-icon {
+  margin-top: -53px;
+  vertical-align: top;
+}
+
+.pricing_paid-plan-icon {
+  margin-top: -63px;
+  vertical-align: top;
+}
+
+.pricing_free-plan h3,
+.pricing_paid-plan h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 19px;
+}
+
+.pricing_free-plan h3:last-of-type,
+.pricing_paid-plan h3:last-of-type {
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.pricing_paid-plan h3:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pricing_paid-plan h3:last-of-type span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: .6;
+  margin-left: 7.5px;
+}
+
+.pricing_free-plan p,
+.pricing_paid-plan p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: .6;
+  margin-bottom: 26px;
+}
+
+.pricing_free-plan li,
+.pricing_paid-plan li {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.pricing_free-plan li:last-of-type,
+.pricing_paid-plan li:last-of-type {
+  margin-bottom: 0;
+}
+
+.pricing_free-plan li svg,
+.pricing_paid-plan li svg {
+  margin-right: 15px;
+}
+
+.contact {
+  background-image: url(/assets/bg-footer-squiggle.svg);
+  background-size: 584px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 164px;
+}
+
+.contact-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 31px;
+  padding: 0 20px;
+}
+
+input[type="email"],
+button {
+  display: inline-block;
+  width: 100%;
+  max-width: 375px;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 24px;
+}
+
+input[type="email"] {
+  font-size: 15px;
+  color: inherit;
+  background-color: #093F68;
+  padding: 12px 18px;
+  border: 2px solid #080C20;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  font-weight: 800;
+  color: inherit;
+  opacity: .4;
+}
+
+:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  font-weight: 800;
+  color: inherit;
+  opacity: .4;
+}
+
+::-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  font-weight: 800;
+  color: inherit;
+  opacity: .4;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  font-weight: 800;
+  color: inherit;
+  opacity: .4;
+}
+
+button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  font-weight: 800;
+  color: #093F68;
+  background-color: #3EE9E5;
+  padding: 12px 42px;
+  border: 2px solid #3EE9E5;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  color: #FFFFFF;
+  background-color: #080C20;
+  border: 2px solid #3EE9E5;
+}
+
+input[type="email"]:hover,
+input[type="email"]:focus {
+  border-color: #3EE9E5;
+}
+
+.email-not-valid {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #FF2965;
+  display: none;
+}
+
+.email-border-error {
+  border: 2px solid #FF2965 !important;
+}
+
+@media (min-width: 415px) {
+  .hero {
+    background-position: top center;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 48px 0 77px;
+  }
+  .hero {
+    padding: 53px 0;
+    background-image: url(/assets/illustration-hero-left.svg), url(/assets/bg-hero-squiggle.svg), url(/assets/illustration-hero-right.svg);
+    background-size: 314px,  386px,  317px;
+    background-repeat: no-repeat,  no-repeat,  no-repeat;
+    background-position: left,  center,  right;
+  }
+  .hero-container {
+    top: 0;
+  }
+  .perks {
+    margin-top: 109px;
+  }
+  .perks > div {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+  .perks > div:last-of-type {
+    margin-bottom: 0;
+  }
+  .perks-text {
+    max-width: 340px;
+  }
+  .perks p {
+    margin-bottom: 0;
+  }
+  .perks h3 {
+    margin-top: 0;
+  }
+  .passions-container,
+  .freedom-container,
+  .lifestyle-container,
+  .work-anywhere-container {
+    margin: 0;
+    margin-right: 55px;
+  }
+  .passions-container,
+  .lifestyle-container {
+    margin-left: 55px;
+  }
+  .pricing {
+    margin-bottom: 119px;
+  }
+  .pricing_free-plan,
+  .pricing_paid-plan {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  .pricing_free-plan {
+    padding-bottom: 48px;
+  }
+  .pricing_paid-plan {
+    padding-bottom: 62px;
+  }
+  .contact {
+    background-size: 1022px;
+    padding-bottom: 50px;
+    margin-bottom: 69px;
+  }
+  .contact-container h2 {
+    padding: 0;
+  }
+  .contact-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-email > div {
+    width: 320px;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+  .email-not-valid {
+    text-align: left;
+    padding-left: 20px;
+  }
+  button {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 140px;
+    margin-left: 16px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    padding: 89px 0 124px;
+  }
+  .hero {
+    padding: 70px 0;
+  }
+  .hero-container {
+    max-width: 620px;
+  }
+  .hero-container h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .hero-container p {
+    margin: 24px 0 64px;
+  }
+  .perks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: none;
+    margin-top: 202px;
+  }
+  .perks > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .perks > div:last-of-type {
+    margin-right: 0;
+  }
+  .passions-container,
+  .freedom-container,
+  .lifestyle-container,
+  .work-anywhere-container {
+    margin: 0;
+  }
+  .freedom-container,
+  .work-anywhere-container {
+    margin-top: 48px;
+  }
+  .perks h3 {
+    margin: 48px 0 23px;
+  }
+  .perks-text {
+    max-width: 255px;
+  }
+  .pricing {
+    margin-top: 202px;
+    margin-bottom: 151px;
+  }
+  .pricing h2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+  .pricing > p {
+    margin-bottom: 117px;
+  }
+  .pricing > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pricing_free-plan,
+  .pricing_paid-plan {
+    margin: 0;
+  }
+  .pricing_free-plan {
+    margin-right: 30px;
+  }
+  .pricing_free-plan p,
+  .pricing_paid-plan p {
+    margin-bottom: 24px;
+  }
+  .contact {
+    background-size: 1664px 228px;
+    padding: 52px 0 70px;
+    margin-bottom: 37px;
+  }
+  .contact-container h2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 42px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
