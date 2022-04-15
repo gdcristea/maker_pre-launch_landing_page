@@ -40,7 +40,7 @@ header {
 }
 
 .hero {
-  background-image: url(/assets/illustration-hero-mobile.png);
+  background-image: url(assets/illustration-hero-mobile.png);
   background-size: 410px;
   background-repeat: no-repeat;
 }
@@ -248,7 +248,7 @@ header {
 }
 
 .contact {
-  background-image: url(/assets/bg-footer-squiggle.svg);
+  background-image: url(assets/bg-footer-squiggle.svg);
   background-size: 584px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -379,10 +379,16 @@ input[type="email"]:focus {
   }
   .hero {
     padding: 53px 0;
-    background-image: url(/assets/illustration-hero-left.svg), url(/assets/bg-hero-squiggle.svg), url(/assets/illustration-hero-right.svg);
-    background-size: 314px,  386px,  317px;
-    background-repeat: no-repeat,  no-repeat,  no-repeat;
-    background-position: left,  center,  right;
+    background-image: url(assets/illustration-hero-left.svg), url(assets/bg-hero-squiggle.svg), url(assets/illustration-hero-right.svg);
+    background-size: 314px, 
+ 386px, 
+ 317px;
+    background-repeat: no-repeat, 
+ no-repeat, 
+ no-repeat;
+    background-position: left, 
+ center, 
+ right;
   }
   .hero-container {
     top: 0;
