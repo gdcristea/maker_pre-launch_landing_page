@@ -132,6 +132,26 @@ header {
   padding: 34px 21px;
 }
 
+.passions-img {
+  width: 66px;
+  height: 80px;
+}
+
+.freedom-img {
+  width: 56px;
+  height: 67px;
+}
+
+.lifestyle-img {
+  width: 60px;
+  height: 71px;
+}
+
+.work-anywhere-img {
+  width: 78px;
+  height: 56px;
+}
+
 .pricing {
   width: 85%;
   margin-left: auto;
@@ -380,15 +400,9 @@ input[type="email"]:focus {
   .hero {
     padding: 53px 0;
     background-image: url(assets/illustration-hero-left.svg), url(assets/bg-hero-squiggle.svg), url(assets/illustration-hero-right.svg);
-    background-size: 314px, 
- 386px, 
- 317px;
-    background-repeat: no-repeat, 
- no-repeat, 
- no-repeat;
-    background-position: left, 
- center, 
- right;
+    background-size: 314px,  386px,  317px;
+    background-repeat: no-repeat,  no-repeat,  no-repeat;
+    background-position: left,  center,  right;
   }
   .hero-container {
     top: 0;
@@ -537,6 +551,40 @@ input[type="email"]:focus {
   }
   .perks-text {
     max-width: 255px;
+  }
+  .passions-container,
+  .freedom-container,
+  .lifestyle-container,
+  .work-anywhere-container {
+    width: 160px;
+  }
+  .passions-container {
+    padding: 29px 32px 29px 40px;
+  }
+  .freedom-container {
+    padding: 38px 43px;
+  }
+  .lifestyle-container {
+    padding: 35px 40px;
+  }
+  .work-anywhere-container {
+    padding: 45px 28px;
+  }
+  .passions-img {
+    width: 88px;
+    height: 106px;
+  }
+  .freedom-img {
+    width: 74px;
+    height: 89px;
+  }
+  .lifestyle-img {
+    width: 80px;
+    height: 94px;
+  }
+  .work-anywhere-img {
+    width: 104px;
+    height: 74px;
   }
   .pricing {
     margin-top: 202px;
